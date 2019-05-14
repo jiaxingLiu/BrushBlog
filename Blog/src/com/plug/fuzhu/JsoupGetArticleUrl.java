@@ -18,6 +18,8 @@ public class JsoupGetArticleUrl {
 	 */
 	public static List<String> getCsdnBlogsUrl() {
 		List<String> urls = new ArrayList<String>();
+		urls.add("https://blog.csdn.net/LJX646566715/article/details/90021778");
+		urls.add("https://blog.csdn.net/LJX646566715/article/details/82118235");
 		urls.add("http://blog.csdn.net/ljx646566715/article/details/79280989");
 		urls.add("http://blog.csdn.net/ljx646566715/article/details/79269089");
 		urls.add("http://blog.csdn.net/ljx646566715/article/details/79232720");
@@ -68,14 +70,14 @@ public class JsoupGetArticleUrl {
 				// .header("Accept-Language",
 				// "zh-CN,zh;q=0.8")//,en-US;q=0.5,en;q=0.3
 				// .header("Referer", "https://www.baidu.com/")
-				.header("Accept", "text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8")
-				.header("Accept-Encoding", "gzip, deflate, sdch").header("Accept-Language", "zh-CN,zh;q=0.8")// ,en-US;q=0.5,en;q=0.3
+				.header("Accept", "text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3")
+				.header("Accept-Encoding", "gzip, deflate, br").header("Accept-Language", "zh-CN,zh;q=0.9")// ,en-US;q=0.5,en;q=0.3
 				.header("Cache-Control", "max-age=0").header("Connection", "keep-alive").header("Host", "blog.csdn.net")
-				.header("Referer", "https://www.csdn.net/").header("Upgrade-Insecure-Requests", "1")
+				.header("Referer", "https://blog.csdn.net/LJX646566715").header("Upgrade-Insecure-Requests", "1")
 				.header("User-Agent",
-						"Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/54.0.2840.87 Safari/537.36")
+						"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/73.0.3683.103 Safari/537.36")
 				.header("Cookie",
-						"uuid_tt_dd=9078491993658929928_20180208; kd_user_id=54c83aef-8f81-4efe-bc2b-5f97b4c71115; UserName=LJX646566715; UserInfo=lLY0zttprZtkEXV1dWbLudWbzbDipDsZNl5YtPMlLiZQoJQHa5rW0z6l0w%2B9eZoFm37stWCBACNGndp3EWLLps8ZmIIzzrmng7dJvlnCQwL2LwiJzLulXV6yeuKk6gI6lVPId%2FpxwmReCHFws1UPlA%3D%3D; UserNick=%E8%88%AC%E8%8B%A5%E8%8E%AB%E8%A8%80; UN=LJX646566715; AU=029; BT=1518069306957; uuid=b8c6741e-02f8-47e8-a212-44f45fcce07e; __yadk_uid=nuHiPa03Y1Cng9BlC12VbI5wfAvA0Uwt; Hm_ct_6bcd52f51e9b3dce32bec4a3997715ac=1788*1*PC_VC; Hm_lvt_6bcd52f51e9b3dce32bec4a3997715ac=1518141815,1518141851,1518141860,1518146476; Hm_lpvt_6bcd52f51e9b3dce32bec4a3997715ac=1518153328; dc_tos=p3vals; dc_session_id=10_1518146473505.952428")
+						"uuid_tt_dd=10_19614514690-1554949105314-251895; UserName=LJX646566715; UserInfo=ba8dc3dcc9c3474c80189056f708602a; UserToken=ba8dc3dcc9c3474c80189056f708602a; UserNick=%E4%B8%80%E8%8E%AB%E8%A8%80%E4%B8%80; AU=029; UN=LJX646566715; BT=1555314019807; UM_distinctid=16a2e563c823-0406f8d7e31c24-e323069-151800-16a2e563c83782; _ga=GA1.2.653369905.1556000028; Hm_ct_6bcd52f51e9b3dce32bec4a3997715ac=6525*1*10_19614514690-1554949105314-251895!5744*1*LJX646566715!1788*1*PC_VC; smidV2=2019042417090384373af406c79625b4ed5ef855721eee0016502e39ca2a090; __yadk_uid=t680djJJqQu6FoA9FlFV8ywdmw4aeAdN; dc_session_id=10_1557711930911.232016; Hm_lvt_6bcd52f51e9b3dce32bec4a3997715ac=1557734817,1557735603,1557735632,1557797411; TINGYUN_DATA=%7B%22id%22%3A%22-sf2Cni530g%23HL5wvli0FZI%22%2C%22n%22%3A%22WebAction%2FCI%2FarticleList%252Flist%22%2C%22tid%22%3A%228e7e966c2f2292%22%2C%22q%22%3A0%2C%22a%22%3A63%7D; acw_tc=2760824c15578149142557215eba3c5a35255081b2c7fd7b5447f5fab14100; dc_tos=prhdz8; Hm_lpvt_6bcd52f51e9b3dce32bec4a3997715ac=1557815300")
 				.timeout(5000).get();
 	}
 }
